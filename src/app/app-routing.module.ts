@@ -24,6 +24,10 @@ const routes: Routes = [
     loadChildren: './news/news.module#NewsModule'
   },
   {
+    path: 'blog',
+    loadChildren: './blog/blog.module#BlogModule'
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full'
