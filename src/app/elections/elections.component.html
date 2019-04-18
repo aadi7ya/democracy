@@ -3,15 +3,15 @@
 
 <h2>Elections</h2>
 <ul>
-  <li style="display: inline;">
+  <li style="display: inline;" (click)="toggleElectionType(true)">
     <button>General Elections</button>&nbsp;|
   </li>
-  <li style="display: inline;">
+  <li style="display: inline;" (click)="toggleElectionType(false)">
     <button>Assembly Elections</button>
   </li>
 </ul>
 
-<ul>
+<ul *ngIf="isToggleGeneral">
   <li><a href="/election-details/2019-general-elections">2019 General Elections</a></li>
   <li><a href="/election-details/2014-general-elections">2014 General Elections</a></li>
   <li><a href="/election-details/2009-general-elections">2009 General Elections</a></li>
@@ -29,4 +29,28 @@
   <li><a href="/election-details/1962-general-elections">1962 General Elections</a></li>
   <li><a href="/election-details/1957-general-elections">1957 General Elections</a></li>
   <li><a href="/election-details/1951-52-general-elections">1951-52 General Elections</a></li>
+</ul>
+
+<ul *ngIf="!isToggleGeneral">
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2019</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2018</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2017</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2016</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2015</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2014</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2013</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2012</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2011</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2010</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2009</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2008</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2007</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2006</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2005</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2004</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 2003</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 1998</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 1955</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 1954</a></li>
+  <li><a href="/election-details/2019-general-elections">Legislative Assembly Elections, 1951</a></li>
 </ul>
